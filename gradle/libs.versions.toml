@@ -1,0 +1,31 @@
+[versions]
+
+kotlin = "1.9.0"
+
+androidCompileSdk = "34"
+androidMinSdk = "24"
+androidTargetSdk = "34"
+
+androidGradlePlugin = "8.1.1"
+composeGradlePlugin = "1.5.0"
+
+androidxActivity = "1.7.2"
+androidxAppcompat = "1.6.1"
+androidxKtx = "1.10.1"
+
+[libraries]
+
+androidx-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppcompat" }
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxKtx" }
+
+[plugins]
+
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+
+compose = { id = "org.jetbrains.compose", version.ref = "composeGradlePlugin" }
+
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

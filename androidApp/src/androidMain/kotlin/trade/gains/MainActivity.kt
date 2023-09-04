@@ -1,4 +1,4 @@
-package com.myapplication
+package trade.gains
 
 import MainView
 import android.os.Bundle
